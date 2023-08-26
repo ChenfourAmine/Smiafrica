@@ -145,6 +145,12 @@ a {
     color: rgba(26, 38, 52, 1);
     margin: 0px 15px;
 }
+#menu-bar, #hide-menu {
+    display: none;
+    height: 30px !important;
+    margin: 0px 15px;
+}
+
 
 .nav1 > div:nth-child(2) {
     width: 60%;

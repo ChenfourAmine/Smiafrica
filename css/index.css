@@ -25,6 +25,7 @@
 }
 
 .home1 > div {
+    padding-top: 20px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(41, 69, 131, 0.6), rgba(46, 96, 204, 0.6));
     background-color: transparent;
 }
@@ -124,18 +125,14 @@
 .how-it-works > div > div {
     width: 280px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     padding: 10px;
     border-radius: 3px;
     margin: 15px;
     border-left: 2px solid rgba(99, 148, 251, 1);
     background-color: white;
-}
-
-.how-it-works > div > div > img {
-    width: 50px;
 }
 
 .how-it-works > div > div > span {
@@ -146,12 +143,19 @@
     color: white;
     font-family: futura-bold;
     font-size: 20px;
-    margin: 0px 15px;
+    margin: 15px 0;
+}
+
+.how-it-works > div > div > img {
+    max-width: 80%;
+    max-height: 150px;
 }
 
 .how-it-works > div > div > p {
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 1px;
     text-align: center;
+    color: rgb(71, 115, 209);
 }
 
 @media (max-width: 300px) {

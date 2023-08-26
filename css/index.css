@@ -1,0 +1,64 @@
+
+
+
+/* How it works */
+.how-it-works {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 0;
+    background-color: whitesmoke;
+}
+
+.how-it-works > header {
+    text-align: center;
+    font-family: futura-bold;
+    font-size: 29px;
+    color: #203560;
+}
+
+.how-it-works > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.how-it-works > div > div {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 15px;
+    border-left: 2px solid rgba(99, 148, 251, 1);
+    background-color: white;
+}
+
+.how-it-works > div > div > img {
+    width: 50px;
+}
+
+.how-it-works > div > div > span {
+    padding: 4px 7px;
+    border-radius: 4px;
+    width: fit-content;
+    background-color: rgba(99, 148, 251, 1);
+    color: white;
+    font-family: futura-bold;
+    font-size: 20px;
+    margin: 0px 15px;
+}
+
+.how-it-works > div > div > p {
+    font-size: 20px;
+}
+
+@media (max-width: 300px) {
+    .how-it-works > div > div {
+        width: 100%;
+    }
+}

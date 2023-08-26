@@ -1,4 +1,99 @@
+/* Main Color : rgba(99, 148, 251, 1) */
 
+* {
+    font-family: futura-light;
+}
+
+.nav1 > div:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.nav1 > div:nth-child(3) {
+    width: fit-content;
+    margin-right: 15px;
+}
+
+.nav1 > div:nth-child(3) > span {
+    background-color: rgba(99, 148, 251, 1);
+}
+
+
+
+.home1 {
+    background-image: url(../images/home-bg2.gif);
+    height: 70vh;
+}
+
+.home1 > div {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(41, 69, 131, 0.6), rgba(46, 96, 204, 0.6));
+    background-color: transparent;
+}
+
+.home1 > div > div:nth-child(1) {
+    width: 95%;
+    margin: 0px auto;
+    align-items: center;
+}
+
+.home1 > div > div:nth-child(1) > header {
+    font-family: futura-bold;
+    text-align: center;
+    width: fit-content;
+    color: white;
+    padding: 10px 30px;
+    margin: 10px auto;
+    border-bottom: 1px solid white;
+}
+
+.home1 > div > div:nth-child(1) > p {
+    max-width: 60%;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.home1 > div > div:nth-child(1) > div {
+    justify-content: center;
+}
+
+.home1 > div > div:nth-child(2) {
+    display: none;
+}
+
+.home1 > div > div:nth-child(1) > p > strong {
+    color: rgb(115, 159, 255);
+    font-family: futura-bold;
+}
+
+.home1 > div > div:nth-child(1) > div > span {
+    border-radius: 2px;
+    font-size: 20px;
+    border: 1px solid white;
+    color: white;
+}
+
+.home1 > div > div:nth-child(1) > div > span:hover {
+    background-color: white;
+}
+
+@media (max-width: 700px) {
+    .home1 > div > div:nth-child(1) > header {
+        font-size: 26px;
+    } 
+
+    .home1 {
+        height: 60vh;
+    }
+
+    .home1 > div > div:nth-child(1) > p {
+        max-width: 90%;
+        font-size: 18px;
+    }
+    .home1 > div > div:nth-child(1) > div > span {
+        font-size: 19px;
+    }
+}
 
 
 /* How it works */
@@ -62,3 +157,5 @@
         width: 100%;
     }
 }
+
+

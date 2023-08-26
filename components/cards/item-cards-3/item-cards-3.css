@@ -1,0 +1,94 @@
+/* ITEM CARDS 3 */
+.item-cards-3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.item-cards-3 > div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 31%;
+    height: 600px;
+}
+
+.item-cards-3 > div > div:nth-child(1) {
+    background-size: cover;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-cards-3 > div > div:nth-child(1) > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    margin: 10px auto;
+}
+
+.item-cards-3 > div > div:nth-child(1) > div > span {
+    padding: 5px 10px;
+    background-color: white;
+    text-align: center;
+    font-size: 17px;
+}
+
+.item-cards-3 > div > div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    height: 20%;
+    margin: 15px auto;
+}
+
+.item-cards-3 > div > div:nth-child(2) > header {
+    font-size: 15px;
+}
+
+.item-cards-3 > div > div:nth-child(2) > div {
+    margin: 7px 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.item-cards-3 > div > div:nth-child(2) > div >  strong {
+    font-weight: bold;
+    font-size: 15.5px;
+    margin-right: 10px;
+}
+
+.item-cards-3 > div > div:nth-child(2) > div >  strong:nth-child(2) {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+
+.item-cards-3 > div > div:nth-child(2) > p {
+    font-size: 14px;
+    color: gray;
+    margin: 0px;
+}
+
+
+
+@media (max-width: 700px) {
+    .item-cards-3 {
+        width: 95%;
+        justify-content: space-around;
+    }
+
+    .item-cards-3 > div {
+        width: 47%;
+        min-height: 350px;
+        max-height: 400px;
+        margin: 10px 0;
+    }
+}

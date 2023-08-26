@@ -1,0 +1,131 @@
+/* ITEM CARDS 1 */
+.item-cards-2 {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.item-cards-2 > div {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    background-size: cover;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.item-cards-2 > div > div {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow: auto;
+}
+
+.item-cards-2 > div > div > div {
+    width: 95%;
+    margin: 8px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-cards-2 > div > div > div > p {
+    background-image: linear-gradient(to right bottom, rgb(123, 224, 46), rgb(173, 255, 110), rgb(123, 224, 46));
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: white;
+    font-weight: bold;
+}
+
+.item-cards-2 > div > div > div > div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item-cards-2 > div > div > div > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-cards-2 > div > div > div > span {
+    font-size: 17px;
+}
+
+.item-cards-2 > div > div > div > span > i {
+    margin-right: 4px;
+    font-size: 15px;
+}
+
+.item-cards-2 > div > div > header, .item-cards-2 > div > div > p, .item-cards-2 > div > div > span {
+    display: none;
+}
+
+.item-cards-2 > div > div > header {
+    max-width: 95%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0px auto;
+}
+
+.item-cards-2 > div:hover > div {
+    height: 100%;
+    transition: 0.4s;
+}
+
+.item-cards-2 > div:hover > div > header {
+    display: flex;
+}
+
+.item-cards-2 > div:hover > div > p {
+    display: flex;
+}
+
+.item-cards-2 > div:hover > div > span {
+    display: flex;
+}
+
+.item-cards-2 > div > div > p {
+    max-width: 80%;
+    margin: 4px auto;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.4em;
+}
+
+.item-cards-2 > div > div > span {
+    margin: 6px auto;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 5px 9px;
+    border: 1px solid black;
+    transition: 0.2s;
+    text-align: center;
+    color: black;
+}
+.item-cards-2 > div > div > span:hover {
+    background-color: black;
+    color: white;
+}

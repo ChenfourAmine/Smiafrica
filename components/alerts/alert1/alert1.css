@@ -1,0 +1,101 @@
+/* SUCCESS */
+.alert1-success {
+    max-width: 300px;
+    padding: 5px 8px;
+    background-color: rgb(212, 239, 223);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-left: 3px solid rgb(96, 174, 62);
+    animation: slide-right 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.alert1-success > p {
+    color: rgb(96, 174, 62);
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+.alert1-success > i {
+    color: rgb(96, 174, 62);
+    font-size: 19px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.alert1-success > i:hover {
+    opacity: 1;
+}
+
+/* WARNING */
+.alert1-warning {
+    max-width: 300px;
+    padding: 5px 8px;
+    background-color: rgb(250, 249, 199);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-left: 3px solid rgb(198, 182, 0);
+    animation: slide-right 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.alert1-warning > p {
+    color: rgb(174, 165, 62);
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+.alert1-warning > i {
+    color: rgb(174, 165, 62);
+    font-size: 19px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.alert1-warning > i:hover {
+    opacity: 1;
+}
+
+/* ERROR */
+.alert1-error {
+    max-width: 300px;
+    padding: 5px 8px;
+    background-color: rgb(255, 191, 191);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    border-left: 3px solid rgb(198, 0, 0);
+    animation: slide-right 0.6s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.alert1-error > p {
+    color: rgb(174, 62, 62);
+    font-size: 19px;
+    margin-right: 20px;
+}
+
+.alert1-error > i {
+    color: rgb(174, 62, 62);
+    font-size: 19px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.alert1-error > i:hover {
+    opacity: 1;
+}

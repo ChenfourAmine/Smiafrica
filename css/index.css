@@ -126,6 +126,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
     padding: 10px;
     border-radius: 3px;
     margin: 15px;
@@ -150,6 +151,7 @@
 
 .how-it-works > div > div > p {
     font-size: 20px;
+    text-align: center;
 }
 
 @media (max-width: 300px) {

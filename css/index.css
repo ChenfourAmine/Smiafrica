@@ -25,7 +25,7 @@
 }
 
 .home1 > div {
-    padding: 90px 0;
+    padding: 100px 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(41, 69, 131, 0.6), rgba(46, 96, 204, 0.6));
     background-color: transparent;
 }
@@ -72,11 +72,18 @@
     border-radius: 2px;
     font-size: 20px;
     border: 1px solid white;
+}
+
+.home1 > div > div:nth-child(1) > div > span > a {
     color: white;
 }
 
 .home1 > div > div:nth-child(1) > div > span:hover {
     background-color: white;
+}
+
+.home1 > div > div:nth-child(1) > div > span:hover > a {
+    color: black;
 }
 
 @media (max-width: 700px) {

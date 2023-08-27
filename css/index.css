@@ -21,11 +21,11 @@
 
 .home1 {
     background-image: url(../images/home-bg2.gif);
-    height: 70vh;
+    height: auto;
 }
 
 .home1 > div {
-    padding-top: 20px;
+    padding: 90px 0;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(41, 69, 131, 0.6), rgba(46, 96, 204, 0.6));
     background-color: transparent;
 }
@@ -43,6 +43,7 @@
     color: white;
     padding: 10px 30px;
     margin: 10px auto;
+    margin-top: 30px;
     border-bottom: 1px solid white;
 }
 
@@ -84,7 +85,7 @@
     } 
 
     .home1 {
-        height: 60vh;
+        height: auto;
     }
 
     .home1 > div > div:nth-child(1) > p {
@@ -131,7 +132,7 @@
     padding: 10px;
     border-radius: 3px;
     margin: 15px 35px;
-    border-left: 2px solid rgba(99, 148, 251, 1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     background-color: white;
 }
 
@@ -161,6 +162,7 @@
 @media (max-width: 300px) {
     .how-it-works > div > div {
         width: 100%;
+        margin: 15px 0 !important;
     }
 }
 

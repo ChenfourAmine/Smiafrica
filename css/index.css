@@ -203,7 +203,7 @@
 /* Media Home */
 
 .media-home {
-    display: flex;
+    display: none;
     align-items: center;
     background-image: url(../images/bg/media-bg1.jpg);
     background-size: cover;

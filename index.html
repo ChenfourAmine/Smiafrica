@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/acss.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/solutions.css">
     <script src="js/utils.js"></script>
     <script src="js/form.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/chart.js"></script>
+    <script src="js/solutions.js"></script>
     <script src="js/index.js"></script>
     <title>SmiaFrica</title>
 </head>
-<body>
+<body onload="init()">
     <div class="nav1">
         <div>
             <img src="images/logo-smiafrica.png">
@@ -21,7 +23,7 @@
             <img id="hide-menu" src="icons/exit-icon.png" onclick="hideMenu('nav1')">
         </div>
         <div>
-            <a href="">Solutions</a>
+            <a href="#solutions-ctr">Solutions</a>
             <a href="">Customers</a>
             <a href="">About Us</a>
             <a href="">Contact</a>
@@ -41,7 +43,7 @@
                     Insights overview and impact measurement.
                 </p>
                 <div>
-                    <span>How it works</span>
+                    <span><a href="#how-it-works">How it works</a></span>
                 </div>
             </div>
             <div> 
@@ -50,7 +52,7 @@
         </div>
     </div> 
     
-    <div class="how-it-works">
+    <div id="how-it-works" class="how-it-works">
         <header>How it works</header>
         <div>
             <div>
@@ -80,6 +82,11 @@
             </div>
         </div>
     </div>
+  
+    <div id="solutions-ctr" class="solutions-ctr">
+        <header>Our Solutions</header>
+        <div id="solutions"></div>
+    </div>
 
     <div class="media-home">
         <div>
@@ -95,7 +102,7 @@
         <div>
             <img src="images/connected-world.png">
         </div>
-    </div>
+   </div>
 
    <div class="footer">
     <div>

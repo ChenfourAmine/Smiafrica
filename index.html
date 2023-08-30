@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,14 +8,17 @@
     <link rel="stylesheet" href="css/acss.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/solutions.css">
+    <link rel="stylesheet" href="css/about-us.css">
     <script src="js/utils.js"></script>
     <script src="js/form.js"></script>
     <script src="js/pagination.js"></script>
     <script src="js/chart.js"></script>
     <script src="js/solutions.js"></script>
+    <script src="js/goals.js"></script>
     <script src="js/index.js"></script>
     <title>SmiaFrica</title>
 </head>
+
 <body onload="init()">
     <div class="nav1">
         <div>
@@ -38,7 +42,7 @@
             <div>
                 <header>The largest media network in Africa</header>
                 <p>
-                    Create and manage your content. Find your best match media and 
+                    Create and manage your content. Find your best match media and
                     <strong>creators</strong>. Share your <strong>stories</strong> across Africa.
                     Insights overview and impact measurement.
                 </p>
@@ -46,12 +50,12 @@
                     <span><a href="#how-it-works">How it works</a></span>
                 </div>
             </div>
-            <div> 
+            <div>
                 <!-- img -->
             </div>
         </div>
-    </div> 
-    
+    </div>
+
     <div id="how-it-works" class="how-it-works">
         <header>How it works</header>
         <div>
@@ -82,7 +86,7 @@
             </div>
         </div>
     </div>
-  
+
     <div id="solutions-ctr" class="solutions-ctr">
         <header>Our Solutions</header>
         <div id="solutions"></div>
@@ -92,8 +96,8 @@
         <div>
             <header>Media Database</header>
             <p>
-                Smiafrica’s media database provides access to a 
-                vast network of verified and vetted media professionals, 
+                Smiafrica’s media database provides access to a
+                vast network of verified and vetted media professionals,
                 journalists, creators and production companies across Africa.
             </p>
             <img src="images/connected-world.png">
@@ -102,35 +106,153 @@
         <div>
             <img src="images/connected-world.png">
         </div>
-   </div>
+    </div>
 
-   <div class="footer">
-    <div>
-        <header>Do you Like to be part of our Ecosystem ?</header>
-        <p>
-            We encourage community intelligence and the digital transition 
-            that promotes the social economic inclusion of African Media 
-            Content Creators. 
-        </p>
-        <div>
-            <img src="images/Project-stages.png">
-            <span>Start Your Project</span>    
+
+    <!-- About Us -->
+    <div class="about-us-ctr">
+        <div class="presentation-ctr">
+            <header>About us</header>
+            <p>If you want to learn more about Smiafrica please watch this video bellow.</p>
+            <video poster="images/video-poster.png" controls><source src="videos/smiafrica-video.mp4" type="video/mp4"></video>
+        </div>
+
+        <div class="about-us-services">
+            <div>
+                <header>SMART MEDIA INITIATIVE AFRICA</header>
+                <p>
+                    A JaaS platform (Journalism As A Service): Solution based on Creator Economy 
+                    model to Connects African  journalists and  influencers with companies, startups
+                    , cooperatives, NGOs and Public Sector.
+                </p>
+            </div>
+            <div>
+                <header>Enjoy all-in-one Creator Management Platform :</header>
+                <div>
+                    <p>
+                        We provide an easy-to-use platform that enables users, Create, share and 
+                        Monetize Serious content across African & Mena Market.
+                    </p>
+                    <p>
+                        It also includes artificial Intelligence Tools and media monitoring reports: 
+                        to help businesses measure the impact and ROI of published content.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us-program">
+            <div>
+                <header>Our Company Mission</header>
+                <span>We are a Digital Cooperative (CoopTech) providing :</span>
+                <p>
+                    Decentralized platform open to the creation and management of Media Content.
+                </p>
+                <p>
+                    Offering a Solution in line with the new trend “CREATOR ECONOMY”: which is 
+                    revolutionizing Professions, Actors and Economic Models on the Web.
+                </p>
+                <p>
+                    An innovative model of Media Content & Communication monetization
+                </p>
+            </div>
+            <div>
+                <header>Our Vision</header>
+                <span>Provide a solution for African Media Order disruption caused by Lacke of :</span>
+                <p>
+                    Interconnection between Media & SMEs, Start Ups and NGOs (+80% of socio economic actors)
+                </p>
+                <p>
+                    Collaborative Media Platforms  between in Africa
+                </p>
+                <p>
+                    Built a All-in-one Platform based on the new Creator Economy Model
+                </p>
+            </div>
+        </div>
+
+        <div class="about-us-goals">
+            <header>Our Goals</header>
+            <div id="goals-list"></div>
+            <div id="pagination2" class="pagination2"></div>
+        </div>
+
+        <div class="team-ctr">
+            <span>Who we are</span>
+            <header>Our Team</header>
+            <div class="profile-cards-1">
+                <div>
+                    <div>
+                        <img src="photos/person2.jpg">
+                    </div>
+                    <header><strong>Safi</strong> Houssine</header>
+                    <p>CO-FOUNDER</p>
+                    <div>
+                        <img src="icons/linkedin.png">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="photos/person3.jpg">
+                    </div>
+                    <header><strong>EL JACIFI</strong> Oussama Anouar</header>
+                    <p>CO-FOUNDER</p>
+                    <div>
+                        <img src="icons/linkedin.png">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="photos/person4.jpg">
+                    </div>
+                    <header><strong>KERBELLEC</strong> Sidonie</header>
+                    <p>FUNDRAISING Officer</p>
+                    <div>
+                        <img src="icons/linkedin.png">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="photos/person1.png">
+                    </div>
+                    <header><strong>BENARRATA</strong> Zakariae</header>
+                    <p>IT Officer</p>
+                    <div>
+                        <img src="icons/linkedin.png">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="contact-info">
+
+    <!-- Footer -->
+    <div class="footer">
         <div>
-            <img src="images/logo-smiafrica.png">
-            <p>Do you care to learn more about us ?</p>
-            <span>About Us</span>
+            <header>Do you Like to be part of our Ecosystem ?</header>
+            <p>
+                We encourage community intelligence and the digital transition
+                that promotes the social economic inclusion of African Media
+                Content Creators.
+            </p>
+            <div>
+                <img src="images/Project-stages.png">
+                <span>Start Your Project</span>
+            </div>
         </div>
-        <div>
-            <h4>Contact Informations</h4>
-            <span><b>.</b> 23 jardins de Temara-BP : 5823 Harhoura-Morocco</span>
-            <span><b>.</b> contact@smiafrica.ma</span>
-            <span><b>.</b> +212 (0) 674-021-873</span>
-            <span><b>.</b> +1 (437) 248 3646</span>
+        <div class="contact-info">
+            <div>
+                <img src="images/logo-smiafrica.png">
+                <p>Do you care to learn more about us ?</p>
+                <span>About Us</span>
+            </div>
+            <div>
+                <h4>Contact Informations</h4>
+                <span><b>.</b> 23 jardins de Temara-BP : 5823 Harhoura-Morocco</span>
+                <span><b>.</b> contact@smiafrica.ma</span>
+                <span><b>.</b> +212 (0) 674-021-873</span>
+                <span><b>.</b> +1 (437) 248 3646</span>
+            </div>
         </div>
     </div>
-   </div> 
 </body>
 </html>

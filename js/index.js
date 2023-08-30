@@ -5,7 +5,7 @@ function init() {
 
 function loadData() {
     loadSolutions();
-    //Other loading functions ...
+    loadGoals();
 }
 
 function loadSolutions() {
@@ -20,5 +20,12 @@ function loadSolutions() {
         </div>
         `;
         return s;
+    })
+}
+
+function loadGoals() {
+    let pagination = new Pagination('goals-list', 'pagination2', goals, 1);
+    pagination.load((goal) => {
+        return `<p>${goal}<img src="icons/goal.png" /></p>`;
     })
 }

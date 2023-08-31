@@ -6,6 +6,7 @@ function init() {
 function loadData() {
     loadSolutions();
     loadGoals();
+    loadProdServices();
 }
 
 function loadSolutions() {
@@ -27,5 +28,18 @@ function loadGoals() {
     let pagination = new Pagination('goals-list', 'pagination2', goals, 1);
     pagination.load((goal) => {
         return `<p>${goal}<img src="icons/goal.png" /></p>`;
+    })
+}
+
+function loadProdServices() {
+    let prodServ = solutionsDetails[0].productionServices
+    fillContainer('production-services', prodServ, (service) => {
+        let s = `
+        <div>
+            <img src="icons/${service.img}">
+            <span>${service.text}</span>
+        </div>
+        `
+        return s
     })
 }

@@ -1,6 +1,7 @@
 
 const solutions = [
     {
+        id : 0,
         image : 'content-management.jpg',
         title : 'Media Content Management',
         content : `
@@ -10,6 +11,7 @@ const solutions = [
         `
     },
     {
+        id : 1,
         image : 'media-database.jpg',
         title : 'Media Database',
         content : `
@@ -18,6 +20,7 @@ const solutions = [
         `
     },
     {
+        id : 2,
         image : 'media-distribution.jpeg',
         title : 'Media Distribution',
         content : `
@@ -27,6 +30,7 @@ const solutions = [
         `
     },
     {
+        id : 3,
         image : 'media-monitoring.jpg',
         title : 'Media Monitoring',
         content : `

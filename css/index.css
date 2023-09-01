@@ -47,7 +47,6 @@
     flex-direction: column;
 }
 
-
 * {
     font-family: futura-light;
 }
@@ -151,6 +150,22 @@
     .home1 > div > div:nth-child(1) > div > span {
         font-size: 19px;
     }
+
+    .entry {
+        width: 80% !important;
+    }
+}
+
+/* Entry */
+.entry {
+    font-weight: bold;
+    width: 70%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    line-height: 38px;
+    color: #224895b5;
 }
 
 
@@ -213,7 +228,6 @@
         margin: 15px 0 !important;
     }
 }
-
 
 /* Media Home */
 
@@ -318,7 +332,6 @@
     }
 
 }
-
 
 /* Footer */
 

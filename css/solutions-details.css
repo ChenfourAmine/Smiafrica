@@ -1,4 +1,9 @@
 
+.solutions-details {
+    display: none;
+    flex-direction: column;
+}
+
 /* Media Home */
 
 .media-home {
@@ -71,15 +76,15 @@
 @media (max-width: 900px) {
     .media-home {
         flex-direction: column;
-        height: 100vh;
+        height: auto;
     }
 
     .media-home header {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .media-home > div {
-        width: 100% !important;
+        width: 90% !important;
         margin: 0px !important;
         padding: 0px !important;
     }
@@ -105,29 +110,34 @@
 
 /* Solutions details */
 
+/* solution1 */
+.content-management {
+    display: none;
+    flex-direction: column;
+}
+
 .production-services {
-    width: 100%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0px;
-}
-
-.production-services header {
-    color: rgba(34, 72, 149, 0.71);
-    font-size: 32px;
-    padding: 10px 0px;
-    font-weight: bold;
-    width: 87%;
-    border-bottom: 1px solid rgba(34, 72, 149, 0.71);
+    margin: 60px auto;
 }
 
 .production-services p {
-    width: 85%;
+    width: 100%;
     font-size: 18px;
     letter-spacing: 1.5px;
     line-height: 35px;
     text-align: justify;
+}
+
+@media (max-width: 900px) {
+    .content-management p {
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 1px;
+    }
 }
 
 .prod-tickets {
@@ -161,24 +171,145 @@
     height: 40px;
 }
 
+@media (max-width: 900px) {
+    .prod-tickets > div {
+        width: fit-content;
+        justify-content: center;
+    }
+
+    .prod-tickets > div span {
+        font-size: 16px;
+        margin-left: 18px;
+        display: none;
+    }
+
+    .prod-tickets > div img {
+        height: 35px;
+    }
+
+    .prod-tickets > div:hover > span {
+        display: flex;
+    }
+}
+
 /* div 2 */
 
 .hiring {
-    margin: 50px 0px;
+    margin: 60px auto;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.hiring header {
+    width: 100%;
+    color: rgb(18, 62, 150);
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 13px;
+}
+
 .hiring p {
-    width: 85%;
+    width: 50%;
+    padding: 20px;
     font-size: 18px;
     letter-spacing: 1.5px;
     line-height: 35px;
     text-align: justify;
+    border-left: 1px solid rgb(18, 62, 150);
 }
 
-.hiring img {
-    width: 80%;
+.hiring > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
+.hiring > div > div {
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hiring > div > div img {
+    width: 65%;
+}
+
+.hiring > img {
+    width: 60%;
+}
+
+@media (max-width: 900px) {
+    .hiring > div {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .hiring > div > div {
+        width: 100%;
+    }
+
+    .hiring p {
+        width: 90%;
+        
+    }
+
+    .hiring > img {
+        width: 90%;
+    }
+}
+
+/* last div */
+
+.last-cm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    margin: 60px auto;
+}
+
+.last-cm > div {
+    width: 50%;
+}
+
+.last-cm header {
+    width: 100%;
+    color: rgb(18, 62, 150);
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 13px;
+}
+
+.last-cm p {
+    width: 95%;
+    padding: 20px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+
+.last-cm > img {
+    width: 43%;
+}
+
+@media (max-width: 900px) {
+    .last-cm {
+        flex-direction: column;
+        justify-content: auto;
+    }
+
+    .last-cm > div {
+        width: 100%;
+    }
+
+    .last-cm > img {
+        width: 80%;
+    }
+}

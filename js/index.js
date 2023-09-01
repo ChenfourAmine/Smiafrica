@@ -13,7 +13,7 @@ function loadSolutions() {
     fillContainer('solutions', solutions, (solution)=> {
         let s = `
         <div>
-            <div style="background-image: url(images/${solution.image});">
+            <div style="background-image: url(images/${solution.image});" onclick="loadSolution(${solution.id})">
                 <div><img src="icons/info-white.png"></div>
             </div>
             <header>${solution.title}</header>
@@ -42,4 +42,19 @@ function loadProdServices() {
         `
         return s
     })
+}
+
+function loadSolution(index) {
+    hideById('solution0')
+    hideById('solution1')
+    hideById('solution2')
+    hideById('solution3')
+    
+    showById('solutions-details')
+    showById(`solution${index}`)
+    
+    var targetElement = document.getElementById('solutions-details');
+    if (targetElement) {
+        targetElement.scrollIntoView();
+    }
 }

@@ -24,17 +24,6 @@
     opacity: 1;
 }
 
-/** Header **/
-
-.header1 {
-    color: rgba(34, 72, 149, 0.71);
-    font-size: 32px;
-    padding: 10px 0px;
-    font-weight: bold;
-    width: 87%;
-    border-bottom: 1px solid rgba(34, 72, 149, 0.71);
-}
-
 
 * {
     font-family: futura-light;

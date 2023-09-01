@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/solutions.css">
     <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/contact-us.css">
     <script src="js/utils.js"></script>
     <script src="js/form.js"></script>
     <script src="js/pagination.js"></script>
@@ -27,92 +28,93 @@
             <img id="hide-menu" src="icons/exit-icon.png" onclick="hideMenu('nav1')">
         </div>
         <div>
-            <a href="#solutions-ctr">Solutions</a>
-            <a href="">Customers</a>
-            <a href="">About Us</a>
-            <a href="">Contact</a>
+            <a href="#home" onclick="changePage('home')">Home</a>
+            <a href="#solutions-ctr" onclick="changePage('home')">Solutions</a>
+            <a href="#customer-ctr" onclick="changePage('customer-ctr')">Customers</a>
+            <a href="#about-us-ctr" onclick="changePage('about-us-ctr')">About Us</a>
+            <a href="#contact-us-ctr" onclick="changePage('contact-us-ctr')">Contact</a>
         </div>
         <div>
             <span>Login</span>
         </div>
     </div>
 
-    <div class="home1">
-        <div>
+    <!-- Home Content -->
+    <div id="home" class="home">
+        <div class="home1">
             <div>
-                <header>The largest media network in Africa</header>
-                <p>
-                    Create and manage your content. Find your best match media and
-                    <strong>creators</strong>. Share your <strong>stories</strong> across Africa.
-                    Insights overview and impact measurement.
-                </p>
                 <div>
-                    <span><a href="#how-it-works">How it works</a></span>
+                    <header>The largest media network in Africa</header>
+                    <p>
+                        Create and manage your content. Find your best match media and
+                        <strong>creators</strong>. Share your <strong>stories</strong> across Africa.
+                        Insights overview and impact measurement.
+                    </p>
+                    <div>
+                        <span><a href="#how-it-works">How it works</a></span>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    
+        <div id="how-it-works" class="how-it-works">
+            <header class="header"><img src="icons/newspaper.png"> How it works</header>
+            <div>
+                <div>
+                    <span>1</span>
+                    <img src="images/publish.png">
+                    <p>Publish your project</p>
+                </div>
+                <div>
+                    <span>2</span>
+                    <img src="images/proposals.png">
+                    <p>Receive proposals</p>
+                </div>
+                <div>
+                    <span>3</span>
+                    <img src="images/hire.png">
+                    <p>Review and hire</p>
+                </div>
+                <div>
+                    <span>4</span>
+                    <img src="images/content-production.png">
+                    <p>Content production</p>
+                </div>
+                <div>
+                    <span>5</span>
+                    <img src="images/monitoring.png">
+                    <p>Diffusion and monitoring</p>
                 </div>
             </div>
-            <div>
-                <!-- img -->
-            </div>
         </div>
-    </div>
-
-    <div id="how-it-works" class="how-it-works">
-        <header>How it works</header>
-        <div>
-            <div>
-                <span>1</span>
-                <img src="images/publish.png">
-                <p>Publish your project</p>
-            </div>
-            <div>
-                <span>2</span>
-                <img src="images/proposals.png">
-                <p>Receive proposals</p>
-            </div>
-            <div>
-                <span>3</span>
-                <img src="images/hire.png">
-                <p>Review and hire</p>
-            </div>
-            <div>
-                <span>4</span>
-                <img src="images/content-production.png">
-                <p>Content production</p>
-            </div>
-            <div>
-                <span>5</span>
-                <img src="images/monitoring.png">
-                <p>Diffusion and monitoring</p>
-            </div>
+    
+        <div id="solutions-ctr" class="solutions-ctr">
+            <header class="header"><img src="icons/solution.png"> Our Solutions</header>
+            <div id="solutions"></div>
         </div>
+    
+        <div class="media-home">
+            <div>
+                <header>Media Database</header>
+                <p>
+                    Smiafrica’s media database provides access to a
+                    vast network of verified and vetted media professionals,
+                    journalists, creators and production companies across Africa.
+                </p>
+                <img src="images/connected-world.png">
+                <span>Try it now</span>
+            </div>
+            <div>
+                <img src="images/connected-world.png">
+            </div>
+        </div>    
     </div>
-
-    <div id="solutions-ctr" class="solutions-ctr">
-        <header>Our Solutions</header>
-        <div id="solutions"></div>
-    </div>
-
-    <div class="media-home">
-        <div>
-            <header>Media Database</header>
-            <p>
-                Smiafrica’s media database provides access to a
-                vast network of verified and vetted media professionals,
-                journalists, creators and production companies across Africa.
-            </p>
-            <img src="images/connected-world.png">
-            <span>Try it now</span>
-        </div>
-        <div>
-            <img src="images/connected-world.png">
-        </div>
-    </div>
-
 
     <!-- About Us -->
-    <div class="about-us-ctr">
+    <div id="about-us-ctr" class="about-us-ctr">
         <div class="presentation-ctr">
-            <header>About us</header>
+            <header class="header"><img src="icons/about-us-1.png"> About us</header>
             <p>If you want to learn more about Smiafrica please watch this video bellow.</p>
             <video poster="images/video-poster.png" controls><source src="videos/smiafrica-video.mp4" type="video/mp4"></video>
         </div>
@@ -141,7 +143,7 @@
             </div>
         </div>
 
-        <div class="about-us-program">
+        <div class="about-us-program infos-cards">
             <div>
                 <header>Our Company Mission</header>
                 <span>We are a Digital Cooperative (CoopTech) providing :</span>
@@ -172,14 +174,13 @@
         </div>
 
         <div class="about-us-goals">
-            <header>Our Goals</header>
+            <header class="header"><img src="icons/goals.png"> Our Goals</header>
             <div id="goals-list"></div>
             <div id="pagination2" class="pagination2"></div>
         </div>
 
         <div class="team-ctr">
-            <span>Who we are</span>
-            <header>Our Team</header>
+            <header class="header"><img src="icons/team.png"> Our Team</header>
             <div class="profile-cards-1">
                 <div>
                     <div>
@@ -220,6 +221,114 @@
                     <div>
                         <img src="icons/linkedin.png">
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact Us -->
+    <div id="contact-us-ctr" class="contact-us-ctr">
+        <div class="contact-us">
+            <div class="form2">
+                <div>
+                    <img src="images/form-bg-3.jpeg">
+                </div>
+                <div>
+                    <header>Contact Us</header>
+                    <form>
+                        <div>
+                            <input type="text" placeholder="Name">
+                            <input type="text" placeholder="Phone Number">
+                        </div>
+                        <input type="text" placeholder="Email Address">
+                        <textarea rows="4" placeholder="Message"></textarea>
+                        <span>S'inscrire</span>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <div>
+                        <img src="icons/email.png">
+                        <p>contact@smiafrica.ma</p>
+                    </div>
+                    <div>
+                        <img src="icons/phone.png">
+                        <p>+212 (0) 674-021-873<br>+1 (437) 248 3646</p>
+                    </div>
+                    <div>
+                        <img src="icons/location.png">
+                        <p>Imm 30 appt 8 rue Moulay Ahmed Loukili, HASSAN, RABAT-MOROCCO</p>
+                    </div>
+                    <div>
+                        <img src="icons/support.png">
+                        <p>support@smiafrica.ma</p>
+                    </div>
+                </div>
+                <img src="images/contact-2.png">
+            </div>
+        </div>
+        <div class="questions">
+            <header class="header"><img src="icons/question.png"> Frequently Asked Questions</header>
+            <div>
+                <div>
+                    <header>What Is SMIAfrica ?</header>
+                    <p>
+                        The SMIA project is a Label of an African Collaborative Media Platform open to 
+                        ​Artificial Intelligence tools. Adopting a decentralized Governance-solidarity, 
+                        based on a digital Cooperative (CoopTech).
+                    </p>
+                </div>
+                <div>
+                    <header>What is the economic Modèle of this Project ?</header>
+                    <p>
+                        It’s solidarity entrepreneurial model based on a disruptive innovation 
+                        “Creator Economy”:Based on a Direct monetization of Freelance Media 
+                        Content Creators, ensuring their Brand.
+                    </p>
+                </div>
+                <div>
+                    <header>Why this Initiative ?</header>
+                    <p>
+                        Establish direct monetization of Media content creators
+                        (journalists, influencers and the enhancement of their audience and their 
+                        brand image.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="satisfaction">
+            <header class="header"><img src="icons/satisfaction.png"> Satisfaction Guaranteed</header>
+            <div class="about-us-program">
+                <div>
+                    <header>Incubation of your Project</header>
+                    <p>
+                        We support your Project by Consulting in Digital Transformation
+                    </p>
+                    <p>
+                        Innovative Media Kits and Communication strategy for institutions, 
+                        private sector companies, NGOs & Cooperatives
+                    </p>
+                    <p>
+                        Services on order and collaborative tools in SaaS (Software As A Service); 
+                        for the creation or Promotion of the products and services
+                    </p>
+                    <p>
+                        Collaborative Publication Space for Content Creators, Offering 
+                        intelligent tools shared in SaaS (Software As A Service)
+                    </p>
+                </div>
+                <div>
+                    <header>A Win Win Business Partnership</header>
+                    <p>
+                        Uberized Business Opportunities Platform promoting the products 
+                        and services of its Subscriber Members and socio-economic partners, 
+                        and Loyal Readers-Citizens
+                    </p>
+                    <p>
+                        Direct monetization of Freelance Media Content Creators, ensuring their Brand.
+                    </p>
                 </div>
             </div>
         </div>

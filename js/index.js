@@ -26,6 +26,16 @@ function loadSolutions() {
 function loadGoals() {
     let pagination = new Pagination('goals-list', 'pagination2', goals, 1);
     pagination.load((goal) => {
-        return `<p>${goal}<img src="icons/goal.png" /></p>`;
+        return `<p>${goal}<img src="icons/goals-white.png" /></p>`;
     })
+}
+
+
+
+function changePage(id) {
+    hideById('home');
+    hideById('about-us-ctr');
+    hideById('customer-ctr');
+    hideById('contact-us-ctr')
+    showById(id);
 }

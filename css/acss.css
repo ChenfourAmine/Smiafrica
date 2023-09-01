@@ -1511,6 +1511,10 @@ a {
     color: #53b3ef;
 }
 
+.quote-cards-1 > div > img {
+    width: 30px;
+}
+
 .quote-cards-1 > div > p {
     max-width: 90%;
     text-align: center;

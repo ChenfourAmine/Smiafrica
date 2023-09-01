@@ -6,7 +6,6 @@ function init() {
 function loadData() {
     loadSolutions();
     loadGoals();
-    loadProdServices();
 }
 
 function loadSolutions() {
@@ -44,12 +43,28 @@ function loadProdServices() {
     })
 }
 
+function loadSol2Services() {
+    let pagination = new Pagination('services-list', 'serv-pagination2', solutionsDetails[1].services, 1);
+    pagination.load((service) => {
+        return `<div>
+                    <header> ${service.header} </header>
+                    <p> ${service.p} </p>
+                </div>`;
+    })
+
+}
+
 function loadSolution(index) {
     hideById('solution0')
     hideById('solution1')
     hideById('solution2')
     hideById('solution3')
-    
+
+    loadSolutionHome(index)
+    loadProdServices();
+    loadSol2Services();
+    loadSol2Workflow();
+
     showById('solutions-details')
     showById(`solution${index}`)
     
@@ -58,3 +73,33 @@ function loadSolution(index) {
         targetElement.scrollIntoView();
     }
 }
+
+function loadSolutionHome(index) {
+    let solution = solutionsDetails[index]
+
+    let content = `<div>
+                        <header>${solution.title}</header>
+                        <p>${solution.paragraph}</p>
+                        <img src="images/${solution.img}">
+                        <span>Try it now</span>
+                   </div>
+                   <div>
+                        <img src="images/${solution.img}">
+                   </div>`
+
+    document.getElementById('media-home').innerHTML = content
+}
+
+function loadSol2Workflow() {
+    let steps = solutionsDetails[1].workflowSteps
+    fillContainer('work-flow-steps', steps, (step) => {
+        let s = `
+        <div>
+            <span> ${step.title} <img src="icons/${step.img}"/> </span>
+            <p> ${step.p} </p>
+        </div>
+        `
+        return s
+    })
+}
+

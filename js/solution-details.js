@@ -28,7 +28,67 @@ let solutionsDetails = [
         paragraph : `Smiafrica’s media database provides access to a
                     vast network of verified and vetted media professionals,
                     journalists, creators and production companies across Africa.`,
-        img : 'connected-world.png'
+        img : 'connected-world.png',
+        services : [
+            {
+                header : 'Make your press release stand out',
+                p : `Use a simple drag & drop editor to enhance your press release 
+                with photos, videos, buttons, and more to get your message across.`
+            },
+            {
+                header : 'Media-friendly press releases',
+                p : `Easily share your press releases online or embed them directly 
+                in your pitch emails instead of sending them as attachments.`
+            },
+            {
+                header : 'Work & share as a team',
+                p : `Set different levels of access, track progress and easily update 
+                team members on changes made and project status.`
+            }
+        ],
+        workflowSteps : [
+            {
+                title : 'Create press releases',
+                img : 'multimedia.png',
+                p : `Craft and customize your own press releases with images, 
+                graphics, and multimedia elements through Smiafrica.`
+            },
+            {
+                title : 'Pitch the media',
+                img : 'equipe.png',
+                p : `Increase the chances of engagement and successful pitches with 
+                Smiafrica’s high deliverability and smart suggestions for targeted 
+                media lists.`
+            }, 
+            {
+                title : '24/7 Award Winning Support',
+                img : '24h7.png',
+                p : `Access our award-winning support team anytime to update contact 
+                information, organize into dedicated segments or lists, and select 
+                a tailored audience for your next campaign.`
+            },
+            {
+                title : 'Find journalists',
+                img : 'press.png',
+                p : `Discover and connect with journalists who are most likely to be 
+                interested in your story by searching Smiafrica’s extensive Media Database 
+                and add them to your media lists.`
+            },
+            {
+                title : 'Create a newsroom',
+                img : 'news.png',
+                p : `Establish a dedicated online source for all your brand’s news and 
+                information with Smiafrica’s newsroom feature. Ensure journalists have 
+                access to the most up-to-date news about your brand.`
+            },
+            {
+                title : 'Customer Success',
+                img : 'succes.png',
+                p : `Smiafrica’s dedicated Customer Success team is always ready to 
+                assist you with any issues and help you maximize the benefits of the 
+                platform.`
+            }
+        ]
     },
     {
         title : '',

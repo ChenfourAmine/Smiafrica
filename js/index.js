@@ -45,6 +45,8 @@ function loadProdServices() {
 
 function loadSol2Services() {
     let pagination = new Pagination('services-list', 'serv-pagination2', solutionsDetails[1].services, 1);
+    setContent('services-list', '');
+    setContent('serv-pagination2', '');
     pagination.load((service) => {
         return `<div>
                     <header> ${service.header} </header>
@@ -91,7 +93,7 @@ function loadSolutionHome(index) {
 }
 
 function loadSol2Workflow() {
-    let steps = solutionsDetails[1].workflowSteps
+    let steps = solutionsDetails[1].workflowSteps;
     fillContainer('work-flow-steps', steps, (step) => {
         let s = `
         <div>
@@ -106,7 +108,7 @@ function loadSol2Workflow() {
 function changePage(id) {
     hideById('home');
     hideById('about-us-ctr');
-    hideById('customers-ctr');
+    //hideById('customers-ctr');
     hideById('contact-us-ctr')
     showById(id);
 }

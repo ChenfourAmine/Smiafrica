@@ -35,7 +35,7 @@ function loadGoals() {
 function changePage(id) {
     hideById('home');
     hideById('about-us-ctr');
-    hideById('customer-ctr');
+    hideById('customers-ctr');
     hideById('contact-us-ctr')
     showById(id);
 }

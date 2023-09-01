@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/solutions.css">
     <link rel="stylesheet" href="css/about-us.css">
     <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="css/customers.css">
     <script src="js/utils.js"></script>
     <script src="js/form.js"></script>
     <script src="js/pagination.js"></script>
@@ -30,7 +31,7 @@
         <div>
             <a href="#home" onclick="changePage('home')">Home</a>
             <a href="#solutions-ctr" onclick="changePage('home')">Solutions</a>
-            <a href="#customer-ctr" onclick="changePage('customer-ctr')">Customers</a>
+            <a href="#customer-ctr" onclick="changePage('customers-ctr')">Customers</a>
             <a href="#about-us-ctr" onclick="changePage('about-us-ctr')">About Us</a>
             <a href="#contact-us-ctr" onclick="changePage('contact-us-ctr')">Contact</a>
         </div>
@@ -92,23 +93,7 @@
         <div id="solutions-ctr" class="solutions-ctr">
             <header class="header"><img src="icons/solution.png"> Our Solutions</header>
             <div id="solutions"></div>
-        </div>
-    
-        <div class="media-home">
-            <div>
-                <header>Media Database</header>
-                <p>
-                    Smiafrica’s media database provides access to a
-                    vast network of verified and vetted media professionals,
-                    journalists, creators and production companies across Africa.
-                </p>
-                <img src="images/connected-world.png">
-                <span>Try it now</span>
-            </div>
-            <div>
-                <img src="images/connected-world.png">
-            </div>
-        </div>    
+        </div> 
     </div>
 
     <!-- About Us -->
@@ -226,6 +211,48 @@
         </div>
     </div>
 
+    <!-- Customers -->
+    <div id="customers-ctr" class="customers-ctr">
+        <div class="media-home">
+            <div>
+                <header>The New Way To Tell Your Story</header>
+                <p>
+                    Tell your NGOs most important stories with the most passionate community of 
+                    professional creators. Hire, manage and pay your creators in one simple interface.
+                    Whether producing a one-off project or large scale campaign, Storyhunter 
+                    makes it a breeze.
+                </p>
+                <span>Get Started</span>
+            </div>
+            <div>
+                <img src="images/story.png">
+            </div>
+        </div>
+        <div>
+            <header>The Innovative Solution for NGOs to Tell Their Most Important Stories</header>
+            <p>
+                With SMIAfrica, you can amplify the impact of your NGO’s stories like never before. 
+                Join our platform today and tap into the talent and expertise of our community to create, 
+                share, distribute, and monitor your content with ease. Together, let’s make a lasting 
+                difference through the art of storytelling.
+            </p>
+        </div>
+        <div>
+            <div>
+                <img src="icons/earth.png">
+                <p>Access the world’s leading creator network</p>
+            </div>
+            <div>
+                <img src="icons/africa.png">
+                <p>Distribution over African Media Network</p>
+            </div>
+            <div>
+                <img src="icons/globe.png">
+                <p>Pay Effortlessly Across The Globe</p>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Contact Us -->
     <div id="contact-us-ctr" class="contact-us-ctr">
@@ -243,7 +270,7 @@
                         </div>
                         <input type="text" placeholder="Email Address">
                         <textarea rows="4" placeholder="Message"></textarea>
-                        <span>S'inscrire</span>
+                        <span>Submit</span>
                     </form>
                 </div>
             </div>

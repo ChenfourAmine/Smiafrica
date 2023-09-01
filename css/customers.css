@@ -1,0 +1,61 @@
+.customers-ctr {
+    display: none;
+    flex-direction: column;
+}
+
+.customers-ctr > div:nth-child(2) {
+    width: 90%;
+    margin: 25px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.customers-ctr > div:nth-child(2) > header {
+    max-width: 100%;
+    text-align: center;
+    color: rgb(18, 62, 150);
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+.customers-ctr > div:nth-child(2) > p {
+    font-size: 18px;
+    max-width: 90%;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.customers-ctr > div:nth-child(3) {
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.customers-ctr > div:nth-child(3) > div {
+    margin-bottom: 15px;
+    width: 270px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 3px solid rgb(18, 62, 150);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.customers-ctr > div:nth-child(3) > div > img {
+    margin: 10px;
+    width: 50px;
+}
+
+.customers-ctr > div:nth-child(3) > div > p {
+    font-size: 20px;
+    line-height: 1.4em;
+    margin: 10px;
+}

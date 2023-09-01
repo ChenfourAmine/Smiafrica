@@ -1,6 +1,6 @@
 
 .about-us-ctr {
-    display: flex;
+    display: none;
     flex-direction: column;
     padding-top: 80px;
 }
@@ -10,15 +10,8 @@
     flex-direction: column;
     padding: 20px 0;
     border-radius: 5px;
-}
-
-.presentation-ctr > header {
-    max-width: 90%;
-    text-align: center;
-    font-size: 40px;
-    margin: 15px auto;
-    font-family: futura-bold;
-    color: rgba(99, 148, 251, 1);
+    width: 85%;
+    margin: 10px auto;
 }
 
 .presentation-ctr > p {
@@ -86,8 +79,8 @@
     font-size: 20px;
     margin-bottom: 10px;
     padding-bottom: 7px;
-    color: rgba(99, 148, 251, 1);
-    border-bottom: 1px solid rgba(99, 148, 251, 1);
+    color: #203560;
+    border-bottom: 1px solid #203560;
 }
 
 .about-us-services > div:nth-child(2) > div {
@@ -125,7 +118,6 @@
     flex-direction: row;
     justify-content: center;
     padding: 50px 0;
-    background-color: whitesmoke;
 }
 
 .about-us-program > div {
@@ -137,7 +129,7 @@
     background-color: white;
     border-radius: 7px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
-    background-image: linear-gradient(to bottom right, rgb(34, 71, 150), rgb(83, 112, 176));
+    background-color: rgb(18, 62, 150);
 }
 
 .about-us-program > div > header {
@@ -173,7 +165,7 @@
     }
     .about-us-program > div {
         padding: 15px 0;
-        width: 80%;
+        width: 90%;
         margin: 10px auto;
         align-items: center;
     }
@@ -192,7 +184,7 @@
 
     .about-us-program > div > p {
         width: 80%;
-        font-size: 17px;
+        font-size: 16px;
     }
 }
 
@@ -202,17 +194,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
     padding: 50px 0px;
-}
-
-.about-us-goals > header {
-    max-width: 90%;
-    text-align: center;
-    font-size: 40px;
-    margin: 15px auto;
-    font-family: futura-bold;
-    color: rgba(99, 148, 251, 1);
+    width: 80%;
+    margin: 0 auto;
 }
 
 .about-us-goals > div:nth-child(2) {
@@ -229,8 +213,8 @@
     display: flex;
     flex-direction: column;
     border-radius: 7px;
-    background-color: rgb(233, 240, 255);
-    border: 3px solid rgb(149, 183, 255);
+    background-color: rgb(18, 62, 150);
+    color: white;
     padding: 20px 15px;
     font-size: 30px;
     line-height: 1.6em;
@@ -242,7 +226,7 @@
 }
 
 .about-us-goals > div:nth-child(2) > p > img {
-    width: 30px;
+    width: 40px;
     align-self: flex-end;
 }
 
@@ -250,11 +234,11 @@
     width: 15px;
     height: 15px;
     margin: 15px;
-    box-shadow: white 0px 0px 0px 3px, rgba(99, 148, 251, 1) 0px 0px 0px 6px;
+    box-shadow: white 0px 0px 0px 3px, rgb(18, 62, 150) 0px 0px 0px 6px;
 }
 
 .about-us-goals > div:nth-child(3) > span:hover, .pagination2-selected {
-    background-color: rgba(99, 148, 251, 1)  !important;
+    background-color: rgb(18, 62, 150)  !important;
     transition: 0.2s;
 }
 
@@ -267,35 +251,16 @@
 
 /* Our Team */
 .team-ctr {
-    width: 100%;
+    width: 85%;
+    margin: 0 auto;
     padding: 50px 0;
-    background-color: whitesmoke;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.team-ctr > span {
-    width: fit-content;
-    text-align: center;
-    font-size: 19px;
-    color: rgb(44, 62, 100);
-    margin: 10px auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(44, 62, 100);
-}
-
-.team-ctr > header {
-    max-width: 90%;
-    text-align: center;
-    font-size: 40px;
-    margin: 15px auto;
-    font-family: futura-bold;
-    color: rgba(99, 148, 251, 1);
-}
-
 .team-ctr .profile-cards-1 > div  {
-    border-top: 2px solid rgba(99, 148, 251, 1);
+    border-top: 2px solid rgb(18, 62, 150);
     margin: 60px 20px;
 }
 
@@ -306,12 +271,21 @@
 }
 
 .team-ctr .profile-cards-1 > div > div:first-child {
-    border: 2px solid rgba(99, 148, 251, 1);
+    border: 2px solid rgb(18, 62, 150);
 }
 
 .team-ctr .profile-cards-1 > div > div:last-child > img {
     width: 30px;
     margin: 8px;
+}
+
+.team-ctr .profile-cards-1 > div > header > strong {
+    color: rgb(18, 62, 150);
+}
+
+.team-ctr .profile-cards-1 > div > header {
+    margin-top: 15px;
+    color: rgb(42, 58, 94);
 }
 
 @media (max-width: 600px) {

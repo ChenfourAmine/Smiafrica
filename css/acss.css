@@ -39,6 +39,12 @@ html {
     src: url(../fonts/Futura-Bold.ttf);
 }
 
+@font-face {
+    font-family: NixieOne;
+    src: url(../fonts/NixieOne-Regular.ttf);
+}
+
+
 * {
     font-family: raleway;
 

@@ -69,11 +69,6 @@ function loadSolution(index) {
 
     changePage('solutions-details')
     showById(`solution${index}`)
-    
-    var targetElement = document.getElementById('solutions-details');
-    if (targetElement) {
-        targetElement.scrollIntoView();
-    }
 }
 
 function loadSolutionHome(index) {
@@ -111,4 +106,13 @@ function changePage(id) {
     hideById('contact-us-ctr');
     hideById('solutions-details');
     showById(id);
+
+    var targetElement = document.getElementById(id);
+    if (targetElement) {
+        targetElement.scrollIntoView();
+    }
+
+    if (document.getElementById('hide-menu').style.getPropertyValue('display') == 'flex') {
+        hideMenu('nav1')
+    }
 }

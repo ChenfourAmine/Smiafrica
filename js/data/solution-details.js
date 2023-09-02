@@ -91,13 +91,15 @@ let solutionsDetails = [
         ]
     },
     {
-        title : '',
-        paragraph : ``,
-        img : ''
+        title : 'Media Distribution',
+        paragraph : `Distribute your media to the right Media outlets with Smiafrica's 
+        advanced targeting`,
+        img : 'bg-monitoring.jpg'
     },
     {
-        title : '',
-        paragraph : ``,
-        img : ''
+        title : 'Media Monitoring',
+        paragraph : `Monitor your Media Content Coverage Across a Wide African 
+        Network of Online Publications`,
+        img : 'online-news-monitoring.jpg'
     }
 ]

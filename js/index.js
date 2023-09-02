@@ -67,7 +67,7 @@ function loadSolution(index) {
     loadSol2Services();
     loadSol2Workflow();
 
-    showById('solutions-details')
+    changePage('solutions-details')
     showById(`solution${index}`)
     
     var targetElement = document.getElementById('solutions-details');
@@ -83,7 +83,6 @@ function loadSolutionHome(index) {
                         <header>${solution.title}</header>
                         <p>${solution.paragraph}</p>
                         <img src="images/${solution.img}">
-                        <span>Try it now</span>
                    </div>
                    <div>
                         <img src="images/${solution.img}">
@@ -109,6 +108,7 @@ function changePage(id) {
     hideById('home');
     hideById('about-us-ctr');
     //hideById('customers-ctr');
-    hideById('contact-us-ctr')
+    hideById('contact-us-ctr');
+    hideById('solutions-details');
     showById(id);
 }

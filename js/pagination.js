@@ -1,8 +1,9 @@
 
 class Pagination {
-    constructor(contentId, paginationId, data, max) {
+    constructor(contentId, paginationId, paginationCls, data, max) {
         this.contentId = contentId;
         this.paginationId = paginationId;
+        this.paginationCls = paginationCls;
         this.data = data;
         this.max = max;
         this.numberOfPages = this.getPageNumber(data.length, max);
@@ -31,7 +32,7 @@ class Pagination {
     loadPaginationNumbers(callback) {
         let paginationHtml  = element(this.paginationId); 
         let span = document.createElement('span');
-        span.setAttribute('class', `${this.paginationId}-selected`);
+        span.setAttribute('class', `${this.paginationCls}-selected`);
         span.addEventListener('click', ()=> this.changePage(1, callback));
 
         paginationHtml.appendChild(span);
@@ -63,7 +64,7 @@ class Pagination {
                 spans[i].removeAttribute('class');
             }
             else {
-                spans[i].setAttribute('class', `${this.paginationId}-selected`);
+                spans[i].setAttribute('class', `${this.paginationCls}-selected`);
             }
         }
     }

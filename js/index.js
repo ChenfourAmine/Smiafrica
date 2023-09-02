@@ -24,9 +24,9 @@ function loadSolutions() {
 }
 
 function loadGoals() {
-    let pagination = new Pagination('goals-list', 'pagination2', goals, 1);
+    let pagination = new Pagination('goals-list', 'pagination2', 'pagination2', goals, 1);
     pagination.load((goal) => {
-        return `<p>${goal}<img src="icons/goals-white.png" /></p>`;
+        return `<p>${goal}<img src="icons/goals.png" /></p>`;
     })
 }
 
@@ -44,7 +44,7 @@ function loadProdServices() {
 }
 
 function loadSol2Services() {
-    let pagination = new Pagination('services-list', 'serv-pagination2', solutionsDetails[1].services, 1);
+    let pagination = new Pagination('services-list', 'serv-pagination2', 'pagination2', solutionsDetails[1].services, 1);
     setContent('services-list', '');
     setContent('serv-pagination2', '');
     pagination.load((service) => {
@@ -107,7 +107,7 @@ function loadSol2Workflow() {
 function changePage(id) {
     hideById('home');
     hideById('about-us-ctr');
-    //hideById('customers-ctr');
+    hideById('customers-ctr');
     hideById('contact-us-ctr');
     hideById('solutions-details');
     showById(id);

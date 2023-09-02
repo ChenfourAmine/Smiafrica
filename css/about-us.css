@@ -213,8 +213,9 @@
     display: flex;
     flex-direction: column;
     border-radius: 7px;
-    background-color: rgb(18, 62, 150);
-    color: white;
+    background-color: rgb(250, 252, 255);
+    border: 1px solid rgba(0, 31, 98, 0.2);
+    color: rgb(18, 62, 150);
     padding: 20px 15px;
     font-size: 30px;
     line-height: 1.6em;
@@ -230,14 +231,14 @@
     align-self: flex-end;
 }
 
-.about-us-goals > div:nth-child(3) > span {
+.pagination2 > span {
     width: 15px;
     height: 15px;
     margin: 15px;
     box-shadow: white 0px 0px 0px 3px, rgb(18, 62, 150) 0px 0px 0px 6px;
 }
 
-.about-us-goals > div:nth-child(3) > span:hover, .pagination2-selected {
+.pagination2 > span:hover, .pagination2-selected {
     background-color: rgb(18, 62, 150)  !important;
     transition: 0.2s;
 }

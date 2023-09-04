@@ -275,7 +275,7 @@
     border: 2px solid rgb(18, 62, 150);
 }
 
-.team-ctr .profile-cards-1 > div > div:last-child > img {
+.team-ctr .profile-cards-1 > div > div:last-child img {
     width: 30px;
     margin: 8px;
 }

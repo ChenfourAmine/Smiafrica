@@ -92,14 +92,15 @@ let solutionsDetails = [
     },
     {
         title : 'Media Distribution',
-        paragraph : `Distribute your media to the right Media outlets with Smiafrica's 
-        advanced targeting`,
-        img : 'bg-monitoring.jpg'
+        paragraph : `- Distribute your media to the right Media outlets with Smiafrica's 
+        advanced targeting<br/>- Efficiently reach your desired audience with Smiafrica's 
+        media distribution`,
+        img : 'distribution.png'
     },
     {
         title : 'Media Monitoring',
         paragraph : `Monitor your Media Content Coverage Across a Wide African 
         Network of Online Publications`,
-        img : 'online-news-monitoring.jpg'
+        img : 'monitor.png'
     }
 ]

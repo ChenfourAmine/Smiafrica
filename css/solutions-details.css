@@ -350,6 +350,13 @@
     align-items: center;
 }
 
+.process > div > header {
+    text-align: center;
+    font-size: 27px;
+    font-weight: bold;
+    color: rgb(34, 71, 149);
+}
+
 .process > div > p {
     text-align: center;
     font-size: 22px;
@@ -424,7 +431,7 @@
 
 }
 
-/* solutions */
+/* solution 2 */
 
 .solution2-services {
     display: flex;
@@ -668,3 +675,29 @@
         height: fit-content;
     }
 }
+
+/* Solution 3 */
+
+.distribution-steps {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.distribution-steps > p {
+    text-align: center;
+    width: 90%;
+    font-size: 25px;
+    letter-spacing: 1.3px;
+    color: rgb(12, 39, 91);
+}
+
+.distribution-steps .process {
+    width: 100%;
+}
+
+.distribution-steps .process > div {
+}
+

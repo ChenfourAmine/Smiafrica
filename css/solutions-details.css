@@ -698,6 +698,32 @@
     width: 100%;
 }
 
-.distribution-steps .process > div {
+.block22 {
+    width: 88%;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.block22 > header {
+    font-size: 38px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: rgb(23, 69, 160);
+    text-align: center;
+}
+
+.block22 > p {
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    line-height: 35px;
+    margin: 5px 0px;
+    margin-top: 15px;
+}
+
+.block22 > img {
+    width: 60%;
+    margin: 0px;
+}

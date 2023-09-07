@@ -915,3 +915,17 @@
     text-align: justify;
 }
 
+@media (max-width: 700px) {
+
+    .block13 {
+        width: 95%;
+    }
+
+    .block13 > div > div {
+        width: 98%;
+    }
+
+    .block13 > div > div > p {
+        font-size: 16px !important;
+    }
+}

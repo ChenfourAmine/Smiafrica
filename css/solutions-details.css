@@ -840,3 +840,39 @@
     
 }
 
+/* block42 */
+
+.block42 {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block42 > div {
+    width: 63%;
+}
+
+.block42 > div > p {
+    font-size: 22px;
+    letter-spacing: 1.7px;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.block42 > img {
+    width: 37%;
+}
+
+@media (max-width: 700px) {
+    .block42 {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .block42 > * {
+        width: 95% !important;
+    }
+}
+

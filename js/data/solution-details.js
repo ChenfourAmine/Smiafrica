@@ -99,8 +99,8 @@ let solutionsDetails = [
     },
     {
         title : 'Media Monitoring',
-        paragraph : `Monitor your Media Content Coverage Across a Wide African 
-        Network of Online Publications`,
+        paragraph : ` - Monitor your Media Content Coverage Across a Wide African 
+        Network of Online Publications.<br/> - Track Millions of Sources in Real Time.`,
         img : 'monitor.png'
     }
 ]

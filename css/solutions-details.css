@@ -878,7 +878,7 @@
 
 /* Solution 3 */
 
-.block13 {
+.block-s3 {
     width: 85%;
     margin: 50px auto;
     display: flex;
@@ -886,14 +886,14 @@
     align-items: center;
 }
 
-.block13 > div {
+.block-s3 > div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.block13 > div > div {
+.block-s3 > div > div {
     margin: 20px;
     padding: 15px;
     width: 450px;
@@ -904,29 +904,38 @@
     border-radius: 5px;
 }
 
-.block13 > div > div > img {
+.block-s3 > div > div > img {
     width: 25%;
     opacity: 0.7;
 }
 
-.block13 > div > div > p {
+.block-s3 > div > div > p {
     width: 65%;
     font-size: 19px;
     text-align: justify;
 }
 
+.block-s3 > img {
+    width: 50%;
+    box-shadow: rgba(34, 70, 149, 0.2) 0px 2px 5px;
+}
+
 @media (max-width: 700px) {
 
-    .block13 {
+    .block-s3 {
         width: 95%;
     }
 
-    .block13 > div > div {
+    .block-s3 > div > div {
         width: 98%;
     }
 
-    .block13 > div > div > p {
+    .block-s3 > div > div > p {
         font-size: 16px !important;
+    }
+
+    .block-s3 > img {
+        width: 70%;
     }
 }
 
@@ -974,3 +983,43 @@
     }
 }
 
+
+
+.block43 {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block43 > p {
+    width: 95%;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 42px;
+}
+
+.block43 > img {
+    width: 55%;
+    box-shadow: rgba(34, 70, 149, 0.2) 0px 2px 5px;
+}
+
+@media (max-width: 700px) {
+   .block43 {
+        width: 95%;
+   } 
+
+   .block43 > p {
+        font-size: 19px;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: normal;
+    }
+
+    .block43 > img {
+        width: 75%;
+    }
+
+}

@@ -143,7 +143,7 @@
     }
 }
 
-.prod-tickets {
+.tickets {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -151,46 +151,46 @@
     justify-content: space-evenly;
 }
 
-.prod-tickets > div {
+.tickets > div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 250px;
-    border: 1px solid rgba(34, 70, 149, 0.409);
+    box-shadow: rgba(34, 70, 149, 0.2) 0px 3px 8px;
     border-radius: 6px;
     padding: 10px 15px;
     margin: 15px 10px;
     background-color: rgb(245, 248, 255);
 }
 
-.prod-tickets > div > span {
+.tickets > div > span {
     color: rgb(34, 71, 149);
     font-size: 18px;
     font-weight: bold;
     margin: 10px 0px;
 }
 
-.prod-tickets > div img {
+.tickets > div img {
     height: 40px;
 }
 
 @media (max-width: 900px) {
-    .prod-tickets > div {
+    .tickets > div {
         width: fit-content;
         justify-content: center;
     }
 
-    .prod-tickets > div span {
+    .tickets > div span {
         font-size: 16px;
         margin-left: 18px;
         display: none;
     }
 
-    .prod-tickets > div img {
+    .tickets > div img {
         height: 35px;
     }
 
-    .prod-tickets > div:hover > span {
+    .tickets > div:hover > span {
         display: flex;
     }
 }
@@ -929,3 +929,48 @@
         font-size: 16px !important;
     }
 }
+
+
+/* block 23 */
+
+.block23 {
+    width: 85%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block23 > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.block23 > div > div:first-child {
+    width: 55%;
+}
+
+.block23 > div > img {
+    width: 43%;
+}
+
+@media (max-width: 700px) {
+    .block23 {
+        width: 95%;
+    }
+
+    .block23 > div {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .block23 > div > img {
+        width: 95% !important;
+    }
+
+    .block23 .tickets {
+        width: 80% !important;
+    }
+}
+

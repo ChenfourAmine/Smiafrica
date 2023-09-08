@@ -939,6 +939,35 @@
     }
 }
 
+.block52 {
+    width: 85%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.block52 > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.block52 > div > img {
+    box-shadow: rgba(34, 70, 149, 0.2) 0px 2px 5px;
+    max-width: 220px;
+    margin: 15px 20px;
+}
+
+@media (max-width: 700px) {
+    .block52 > div > img {
+        max-width: 115px;
+        margin: 10px;
+    }
+}
 
 /* block 23 */
 
